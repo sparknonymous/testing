@@ -1,60 +1,87 @@
 h1 {
-  color: red;
+  color: white;
+  display: inline-block;
+ 
+  top: 0px;
+
+}
+
+header {
+
+	background-color: rgba(130,100,130, 1);
+	z-index: 5;
+	position: fixed;
+	width: 90%;
+	
+	margin-left: 5%;
+}
+
+.title{
+	
+	position: fixed;
+	margin-top:5px;
+	margin-left: 8px;
+	z-index: 1;
+	
+
+		
+
+
 }
 body{
+	background-attachment: fixed;
+	background-image: url("8-bit-sunset-40969-1920x1080.jpg");
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto;
+	padding: 0;
+
+
+
+}
+
+ul{
+
+	position: relative;
+	margin-left: 100px;
+	left: 100px;
 	
+
+}
+
+li{
+	display: inline-block;
+}
+
+img {
+	height: 100%;
+	width: auto;
+	object-fit: contain;
+}
+
 }
 .nav ul{
 	background-color: blue;
 	padding: 0px;
 	margin: 0px;
 	text-align: center;
+	display: inline;
 }
 
 .grid {
 	border: 1px blue dotted;
+	background-color: rgba(60, 90, 50, 0.4);
+	margin: 0% 10%;
+	padding: 10px;
+	padding-top: 100px;
 	display: grid;
 	grid-template: repeat(6, 50px)/repeat(6,1fr);
 	grid-gap: 20px 20px;
-	justify-items: end;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
+	
+	
+	
 }
 
-.gridB {
-	grid-gap: 20px 10px;
-	display: grid;
-	grid-template: repeat(6, 50px)/repeat(6,1fr);
-	grid-template-areas: "g h h h h i"
-						"g h h h h j"
-						"g h h h h k"
-						"g l l l l l"
-						"g l l l l l"
-						"g l l l l l";
-	justify-content: center ;
-
-}
-
-.gridC {
-	
-	grid-gap: 20px;
-	display: grid;
-	grid-template: repeat(2, 300px)/repeat(3, 300px);
-	
-	
-  	justify-items: center;
- 	justify-content: center;
-  	align-items: center;
-  	align-content: center;
-
- }
-
- .gridD{
- 	display: grid;
- 	grid-template: repeat(2, 300px)/repeat(2,300px);
- 	justify-items: stretch;
- }
 
 .box {
 	border: 1px blue solid;
@@ -62,48 +89,17 @@ body{
 
 .a {
 
-	grid-area: 1/1/7/span 1;
+	grid-area: 1/1/span 2/span 2;
+	
 }
 
 .b {
 
-	grid-area: 1/2/span 6/ span 4;
+	grid-area: 1/3/span 2/ span 3;
 
 }
 
-.g {
 
-	grid-area: g;
 
-}
-
-.h { 
-
-	background-color: grey;
-	grid-area: h;
-	z-index: 1;
-}
-
-.i {
-
-	background-color: magenta;
-	grid-area: 3/3/span 2/ span 2;
-	z-index: 2;
-}
-
-.j {
-
-	grid-area: j;
-}
-
-.k {
-
-	grid-area: k;
-}
-
-.l {
-
-	grid-area: l;
-}
 
 
